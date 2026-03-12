@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reports - Master List of Movies</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+}
+
+.container{
+width:1100px;
+margin:50px auto;
+border:2px solid black;
+padding:20px;
+background:white;
+}
+
+/* top navigation */
+
+.top{
+display:flex;
+justify-content:space-between;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.top a{
+color:blue;
+text-decoration:underline;
+}
+
+/* layout */
+
+.main{
+display:flex;
+gap:25px;
+}
+
+/* left reports menu */
+
+.menu{
+width:220px;
+font-weight:bold;
+line-height:35px;
+}
+
+.menu a{
+display:block;
+text-decoration:none;
+color:black;
+}
+
+.menu a:hover{
+color:blue;
+}
+
+/* table */
+
+.table-area{
+flex:1;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid black;
+padding:8px;
+text-align:center;
+}
+
+th{
+background:#eaeaea;
+}
+
+/* logout */
+
+.logout{
+margin-top:20px;
+}
+
+button{
+padding:8px 18px;
+border:none;
+background:#3d85c6;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* note */
+
+.note{
+margin-top:25px;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top">
+<a href="#">Chart</a>
+<div>Reports</div>
+<a href="#">Home</a>
+</div>
+
+<div class="main">
+
+<!-- left menu -->
+
+<div class="menu">
+
+<a href="#">Master List of Books</a>
+<a href="#">Master List of Movies</a>
+<a href="#">Master List of Memberships</a>
+<a href="#">Active Issues</a>
+<a href="#">Overdue Returns</a>
+<a href="#">Issue Requests</a>
+
+<div class="logout">
+<button>Log Out</button>
+</div>
+
+</div>
+
+<!-- movie table -->
+
+<div class="table-area">
+
+<h3>Master List of Movies</h3>
+
+<table>
+
+<tr>
+<th>Serial No</th>
+<th>Name of Movie</th>
+<th>Author Name</th>
+<th>Category</th>
+<th>Status</th>
+<th>Cost</th>
+<th>Procurement Date</th>
+</tr>
+
+<tr>
+<td>001</td>
+<td>Inception</td>
+<td>Christopher Nolan</td>
+<td>Sci-Fi</td>
+<td>Available</td>
+<td>600</td>
+<td>12-02-2024</td>
+</tr>
+
+<tr>
+<td>002</td>
+<td>Avatar</td>
+<td>James Cameron</td>
+<td>Adventure</td>
+<td>Issued</td>
+<td>700</td>
+<td>18-03-2024</td>
+</tr>
+
+<tr>
+<td>003</td>
+<td>Toy Story</td>
+<td>John Lasseter</td>
+<td>Animation</td>
+<td>Available</td>
+<td>450</td>
+<td>05-04-2024</td>
+</tr>
+
+<tr>
+<td>004</td>
+<td>Harry Potter</td>
+<td>Chris Columbus</td>
+<td>Fantasy</td>
+<td>Available</td>
+<td>650</td>
+<td>20-04-2024</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="note">
+
+<b>Note:</b><br><br>
+
+If logged in as <b>Admin</b> – Home will take to <b>Admin Home Page</b>.<br><br>
+
+If logged in as <b>User</b> – Home will take to <b>User Home Page</b>.
+
+</div>
+
+</div>
+
+</body>
+</html>
